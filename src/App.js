@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { createGlobalStyle } from "styled-components"
+import Start from './components/Start';
+import Main from './components/Main/Main';
+import Header from "./Header";
+import Footer from "./Footer";
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+// import GmarketSansMedium from './styles/fonts/GmarketSansMedium.woff';
+
+const GlobalStyle = createGlobalStyle`
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  body {
+    font-family: 'GmarketSansMedium';
+  }
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <GlobalStyle />
+      <Header />
+      <Routes>
+        <Route path="/" element={<Start />} />
+        <Route path="/main" element={<Main />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }
 
