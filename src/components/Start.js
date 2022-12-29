@@ -16,14 +16,14 @@ const StartContainer = styled.div`
 `
 
 const StartTitle = styled.div`
-    font-size: 60px;
+    font-size: 50px;
     font-family: 'PyeongChangPeace-Bold';
     white-space: pre-wrap;
     text-align: center;
 `
 
 const StartMain = styled.div`
-    font-size: 20px;
+    font-size: 1.125rem;
 `
 
 const StartBtn = styled.button`
