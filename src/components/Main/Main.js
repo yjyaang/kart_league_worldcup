@@ -7,7 +7,7 @@ const Main = () => {
     const [clips, setClips] = useState([]);
     const [displays, setDisplays] = useState([]);
     const [winners, setWinners] = useState([]);
-    const [count, setCount] = useState('4강');
+    const [count, setCount] = useState('16강');
 
     useEffect(() => {
         items.sort(() => Math.random() - 0.5);
@@ -41,14 +41,6 @@ const Main = () => {
         <>
             <RoundCounter><h1>{count === 0 ? '우승' : count}</h1></RoundCounter>
         <FlexBox>
-            {/* {displays.map(item => {
-                return (
-                <SelectArea className="flex-1" key={item.name}>
-                    {item.src}
-                    <SelectBtn onClick={clickHandler(item)}>{item.name}</SelectBtn>
-                </SelectArea>
-                )
-            })} */}
             {displays.length === 1
             ? 
             <SelectArea className="flex-1">

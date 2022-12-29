@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from "styled-components"
 import { Link } from 'react-router-dom';
+import bazzi from '../styles/img/bazzi_cut.png';
 
 const StartContainer = styled.div`
     height: 95vh;
@@ -8,6 +9,10 @@ const StartContainer = styled.div`
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    .bazzi {
+        width: 30vh;
+        height: 30vh;
+    };
 `
 
 const StartTitle = styled.div`
@@ -43,11 +48,13 @@ const StartBtn = styled.button`
     }
 `
 
+
 const Start = () => {
     const titleContent = '카트라이더 리그\n명장면 월드컵'
     return (
         <StartContainer>
             <StartTitle>{titleContent}</StartTitle>
+            <img src={bazzi} className="bazzi" alt="main" />
             <StartMain>당신이 생각하는 최고의 명장면에 투표해 주세요!!</StartMain>
             <Link to="/main"><StartBtn>Start</StartBtn></Link>
         </StartContainer>

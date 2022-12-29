@@ -32,13 +32,13 @@ export const SelectArea = styled.div`
     align-items: center;
 
     .youtube {
-        width: 60vh;
+        width: 64vh;
         height: 40vh;
     }
 `
 
 export const SelectBtn = styled.button`
-    width: 28vh;
+    width: 30vh;
     height: 7vh;
     margin: 20px;
     white-space: pre-wrap;
