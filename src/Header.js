@@ -3,10 +3,9 @@ import styled from "styled-components";
 import { Link } from 'react-router-dom';
 
 const Title = styled.div`
-    font-size: 20px;
     text-align: center;
-    text-transform: uppercase;
     color: #000;
+    font-size: 16px;
 `
 
 const StyledLink = styled(Link)`
@@ -19,7 +18,7 @@ const StyledLink = styled(Link)`
 
 const Header = () => {
     return (
-        <StyledLink to={"/"}><Title>Kartrider League Highlight WorldCup</Title></StyledLink>
+        <StyledLink to={"/"}><Title>GO TO MAIN <i class="fa-solid fa-house"></i></Title></StyledLink>
     )
 }
 

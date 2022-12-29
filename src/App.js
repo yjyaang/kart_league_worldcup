@@ -4,7 +4,7 @@ import { createGlobalStyle } from "styled-components"
 import Start from './components/Start';
 import Main from './components/Main/Main';
 import Header from "./Header";
-import Footer from "./Footer";
+// import Footer from "./Footer";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // import GmarketSansMedium from './styles/fonts/GmarketSansMedium.woff';
 
@@ -19,14 +19,14 @@ const GlobalStyle = createGlobalStyle`
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <GlobalStyle />
       <Header />
       <Routes>
         <Route path="/" element={<Start />} />
         <Route path="/main" element={<Main />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }
