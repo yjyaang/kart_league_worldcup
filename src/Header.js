@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 const Title = styled.div`
     text-align: center;
     color: #000;
-    font-size: 16px;
+    font-size: 1.6vh;
 `
 
 const StyledLink = styled(Link)`

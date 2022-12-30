@@ -35,10 +35,15 @@ export const SelectArea = styled.div`
         width: 64vh;
         height: 40vh;
     }
+
+    .winner-content {
+        font-size: 2.2vh;
+        padding: 20px;
+    }
 `
 
 export const SelectBtn = styled.button`
-    width: 30vh;
+    width: 31vh;
     height: 7vh;
     margin: 20px;
     white-space: pre-wrap;

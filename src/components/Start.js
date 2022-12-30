@@ -16,23 +16,23 @@ const StartContainer = styled.div`
 `
 
 const StartTitle = styled.div`
-    font-size: 50px;
+    font-size: 5vh;
     font-family: 'PyeongChangPeace-Bold';
     white-space: pre-wrap;
     text-align: center;
 `
 
 const StartMain = styled.div`
-    font-size: 1.125rem;
+    font-size: 1.8vh;
 `
 
 const StartBtn = styled.button`
-    width: 300px;
-    height: 70px;
+    width: 30vh;
+    height: 7vh;
     border-style: none;
     border-radius: 5px;
     color: #fff;
-    font-size: 20px;
+    font-size: 2.4vh;
     font-family: 'GmarketSansMedium';
     background-image: linear-gradient(to right, #667eea, #8E37D7);
     box-shadow: 0 4px 15px 0 rgba(116, 79, 168, 0.75);

@@ -44,9 +44,9 @@ const Main = () => {
             {displays.length === 1
             ? 
             <SelectArea className="flex-1">
-                <h1>당신이 선택한 최고의 명장면은</h1>
+                <div className="winner-content">당신이 선택한 최고의 명장면은</div>
                 {displays[0].src}
-                <h2>{displays[0].name}</h2>
+                <div className="winner-content">{displays[0].name}</div>
             </SelectArea>
             :
             displays.map(item => {
